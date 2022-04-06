@@ -1,5 +1,40 @@
-p{
-	font-family: 'Simonetta', cursive;
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-Light.eot');
+    src: local('Brown-Light'),
+        url('../fonts/Brown-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brown-Light.woff') format('woff'),
+        url('../fonts/Brown-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-Regular.eot');
+    src: local('../fonts/Brown-Regular'),
+        url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brown-Regular.woff') format('woff'),
+        url('../fonts/Brown-Regular.ttf') format('truetype');
+    font-weight: regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/Brown-BoldAlt.eot');
+    src: local('../fonts/Brown-BoldAlt'),
+        url('../fonts/Brown-BoldAlt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brown-BoldAlt.woff') format('woff'),
+        url('../fonts/Brown-BoldAlt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body{
+	font-family: "Brown";
 	font-weight: regular;
 }
 ul{
@@ -10,7 +45,7 @@ ul{
 a{
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 ._ibg{
@@ -29,6 +64,7 @@ a{
 	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0px auto;
+	box-sizing: border-box;
 }
 
 .header{
@@ -60,8 +96,8 @@ a{
 }
 .btn{
 	cursor: pointer;
-	padding: 5px 20px;
-    border-radius: 3px;
+	padding: 3px 20px 5px 20px;
+    border-radius: 2px;
 }
 
 .btn_active{
@@ -79,10 +115,9 @@ a{
 }
 
 .text-smile{
-	color: #525f7f;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 32px;
+	color: #32325d;
+	font-size: 16px;
+	font-weight: regular;
 }
 
 .main-block{
@@ -102,7 +137,8 @@ a{
 .main-block__title{
 	max-width: 400px;
 	font-weight: bold;
-	font-size: 43px;
+	font-size: 41px;
+	line-height: 62px;
 	color: #32325d;
 }
 
@@ -110,15 +146,18 @@ a{
 	max-width: 400px;
 	line-height: 32px;
 	font-weight: 100;
-	font-size: 18px;
+	font-size: 20px;
+	color: #525f7f;
 }
 .main-block__buttons{
+	margin-top: 35px;
 	max-width: 400px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .main-block__image{
 	position: absolute;
 	width: 100%;
@@ -132,7 +171,7 @@ a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: -170px;
+	margin-top: -110px;
 }
 .blocks__item{
 	width: 430px;
@@ -142,10 +181,11 @@ a{
 	box-sizing: border-box;
 	margin: 10px 0;
 	z-index: 1;
+	margin-bottom: 35px;
 }
 
 .blocks__item:not(:first-child){
-	box-shadow: -6px 1px 61px -34px rgb(0 0 0 / 20%);
+	box-shadow: -7px 1px 61px -34px rgb(0 0 0 / 30%);
 
 }
 .blocks__item_mini-head{
@@ -158,24 +198,35 @@ a{
 	align-items: center;
 	line-height: 20px;
 	font-size: 15px;
-	color: #525f7f;
+	color: #212240;
+	font-weight: 100;
 }
 
 .item-header__mini-head{
 	font-weight: 100;
-	font-size: 43px;
+	font-size: 35px;
+	color: #32325d;
+
 }
 .item-header{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+
 }
 .item-header__text{
 	line-height: 27px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
+.blocks__item_image{
+	height: 120px;
+}
 
+.blocks__item_image img{
+	padding-top: 15px;
+	height: 100px;
+}
 
 @media (max-width: 996px){
 	.header{
