@@ -149,7 +149,7 @@ a{
 	font-size: 20px;
 	color: #525f7f;
 }
-.main-block__buttons{
+.Block__buttons{
 	margin-top: 35px;
 	max-width: 400px;
 	display: flex;
@@ -267,6 +267,57 @@ a{
 	line-height: 20px;
 	font-weight: 100;
 	color: #525f7f;
+}
+
+.Priority {
+	
+}
+.Priority__container {
+	position: relative;
+}
+._container {}
+.Priority__body {
+	max-width: 500px;
+}
+.Priority__offer {
+	max-width: 440px;
+}
+.offer {}
+.offer__header {
+
+}
+.Light-header {}
+.offer__text {}
+.Opshens {
+	display: flex;
+	justify-content: space-between;
+}
+.Opshens__item {
+	max-width: 180px;
+}
+.Item__smoll-header {
+	font-size: 27px;
+	font-weight: 100;
+	color: #32325d;
+
+}
+.Item__text {
+
+}
+.Block__buttons {}
+.Block__buttons_link {}
+.btn {}
+.btn_active {}
+.Block__buttons_text {}
+.text-smile {}
+.main-block__image {}
+.background__image{
+	position: absolute;
+	width: 602px;
+	height:100%;
+	top: 0;
+	right: 0;
+	z-index: -1;	
 }
 
 
