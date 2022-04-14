@@ -270,12 +270,27 @@ a{
 }
 
 .Priority {
-	
+	margin-bottom:150px;
+
 }
+
 .Priority__container {
 	position: relative;
 }
-._container {}
+.Priority__container_left{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.background__image_left{
+	position: absolute;
+    width: 550px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .Priority__body {
 	max-width: 500px;
 }
@@ -304,23 +319,19 @@ a{
 .Item__text {
 
 }
-.Block__buttons {}
-.Block__buttons_link {}
-.btn {}
-.btn_active {}
-.Block__buttons_text {}
-.text-smile {}
-.main-block__image {}
+
 .background__image{
 	position: absolute;
-	width: 602px;
+	width: 494px;
 	height:100%;
 	top: 0;
 	right: 0;
 	z-index: -1;	
 }
 
-
+.finance__container{
+	position: relative;
+}
 
 @media (max-width: 996px){
 	.header{
