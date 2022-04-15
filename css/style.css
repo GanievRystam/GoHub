@@ -329,9 +329,56 @@ a{
 	z-index: -1;	
 }
 
-.finance__container{
+.finance{
 	position: relative;
 }
+
+
+
+.finances-blocks {
+	margin-top:40px;
+	display: flex;
+}
+.finances-blocks_bottom{
+	justify-content: space-between;
+}
+.Block {}
+.time__title {
+	font-size: 25px;
+	color: #32325d;
+	margin-top:45px;
+	font-weight:300;
+}
+.time__items {
+}
+.finance__item {
+	display: flex;
+	align-items: center;
+}
+.item-img{
+	width: 22px;
+	padding-top: 3px;
+	margin-right: 12px;
+	height: 22px;
+}
+.item-text {
+	font-size: 17px;
+	color: #32325d;
+	font-weight: 100;
+}
+.finance__img{
+	width: 50%;
+	height: 70%;
+}
+.finance__img img{
+	position: absolute;
+    left: 0;
+    top: -82px;
+    width: 100%;
+    object-fit: cover;
+}
+.background__image {}
+
 
 @media (max-width: 996px){
 	.header{
