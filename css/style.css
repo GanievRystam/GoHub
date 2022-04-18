@@ -110,11 +110,11 @@ a{
 	background: #845cff; 
 	cursor: pointer;
 }
-.menu__item_link{
+.menu__link{
 	color: inherit;
 }
 
-.text-smile{
+.Block-text{
 	color: #32325d;
 	font-size: 16px;
 	font-weight: regular;
@@ -149,13 +149,16 @@ a{
 	font-size: 20px;
 	color: #525f7f;
 }
-.Block__buttons{
-	margin-top: 35px;
+.Block-buttons{
 	max-width: 400px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.Block__link{
+	margin-top: 35px;
 }
 
 .main-block__image{
@@ -167,7 +170,7 @@ a{
 
 }
 
-.improves__blocks{
+.improves-blocks{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -231,10 +234,7 @@ a{
 .Proof {
 	text-align: center;
 }
-.Proof__container {}
-.Proof__header {
 
-}
 .Proof__under-text {
 	max-width: 800px;
 	font-weight: 100;
@@ -297,12 +297,7 @@ a{
 .Priority__offer {
 	max-width: 440px;
 }
-.offer {}
-.offer__header {
 
-}
-.Light-header {}
-.offer__text {}
 .Opshens {
 	display: flex;
 	justify-content: space-between;
@@ -314,9 +309,6 @@ a{
 	font-size: 27px;
 	font-weight: 100;
 	color: #32325d;
-
-}
-.Item__text {
 
 }
 
@@ -342,7 +334,6 @@ a{
 .finances-blocks_bottom{
 	justify-content: space-between;
 }
-.Block {}
 .time__title {
 	font-size: 25px;
 	color: #32325d;
@@ -428,10 +419,16 @@ a{
 		flex-direction: column;
 
 	}
+	._ibg{
+		opacity: 0.7;
+	}
+	.Started__body{
+		flex-direction: column;
+	}
 }
 
-@media (max-width: 400px){
-	.logo{
+@media (max-width: 740px){
+	.header__logo{
 		margin-bottom: 10px;
 	}
 	.menu{
@@ -452,5 +449,63 @@ a{
 		padding: 285px 0 194px 0;
 		text-align: center;
 	}
+	.main-block__title{
+		max-width:100%;
+	}
+	.main-block__text{
+		max-width:100%;
+	}
+	.Block-buttons{
+		max-width: 100%;
+		justify-content: space-around;
+	}
+	._ibg{
+		opacity: 0.4;
+	}
+	.finances-blocks_bottom{
+		flex-direction: column;
+	}
+	/*.finance__img{
+		display: none;
+	}*/	
+}
 
+
+@media (max-width: 600px){
+	.container-input{
+		width: 90%;
+		margin: 30px auto;
+
+	}
+	.container-input__input{
+		width:100%;
+		box-sizing: border-box;
+	}
+	.background__image_left{
+		left: auto;
+	}
+}
+
+
+@media (max-width: 490px){
+	
+	.Block-buttons{
+		text-align: center;
+	}
+	.Block-link{
+		width:100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.Opshens{
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.Opshens__item{
+		max-width: 70%;
+		margin:10px auto;
+	}
+	.finance__body{
+		padding-left: 10px;
+	}
 }
