@@ -1,41 +1,17 @@
-@font-face {
-    font-family: 'Brown';
-    src: url('../fonts/Brown-Light.eot');
-    src: local('Brown-Light'),
-        url('../fonts/Brown-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Brown-Light.woff') format('woff'),
-        url('../fonts/Brown-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+:root {
+    --main-font-color: #32325d;
+    --secondary-font-color: #525f7f;
+    --brand-color: #845cff;
 }
 
-@font-face {
-    font-family: 'Brown';
-    src: url('../fonts/Brown-Regular.eot');
-    src: local('../fonts/Brown-Regular'),
-        url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Brown-Regular.woff') format('woff'),
-        url('../fonts/Brown-Regular.ttf') format('truetype');
-    font-weight: regular;
-    font-style: normal;
+html {
+	scroll-behavior: smooth;
 }
-
-@font-face {
-    font-family: 'Brown';
-    src: url('../fonts/Brown-BoldAlt.eot');
-    src: local('../fonts/Brown-BoldAlt'),
-        url('../fonts/Brown-BoldAlt.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Brown-BoldAlt.woff') format('woff'),
-        url('../fonts/Brown-BoldAlt.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
 body{
 	font-family: "Brown";
-	font-weight: regular;
+	margin: 0;
+	padding: 0;
+
 }
 ul{
 	margin: 0;
@@ -98,16 +74,24 @@ a{
 	cursor: pointer;
 	padding: 3px 20px 5px 20px;
     border-radius: 2px;
+	border: 1px solid transparent;
 }
-
 .btn_active{
 	color: #ffffff;
-	background: #845cff; 	
+	transition: all 0.5s;
+	background: var(--brand-color); 	
+}
+
+.btn_active:hover {
+	background-color: transparent;
+	border: 1px solid var(--brand-color);
+	color: var(--brand-color);
 }
 
 .menu__item:hover{
+	transition: all .3s;
 	color: #ffffff;
-	background: #845cff; 
+	background: var(--brand-color); 
 	cursor: pointer;
 }
 .menu__link{
@@ -115,9 +99,12 @@ a{
 }
 
 .Block-text{
-	color: #32325d;
+	color: var(--main-font-color);
 	font-size: 16px;
 	font-weight: regular;
+}
+.Block-text:hover {
+	opacity: 0.7;
 }
 
 .main-block{
@@ -139,7 +126,7 @@ a{
 	font-weight: bold;
 	font-size: 41px;
 	line-height: 62px;
-	color: #32325d;
+	color: var(--main-font-color);
 }
 
 .main-block__text{
@@ -147,7 +134,7 @@ a{
 	line-height: 32px;
 	font-weight: 100;
 	font-size: 20px;
-	color: #525f7f;
+	color: var(--secondary-font-color);
 }
 .Block-buttons{
 	max-width: 400px;
@@ -208,7 +195,7 @@ a{
 .Light-header{
 	font-weight: 100;
 	font-size: 35px;
-	color: #32325d;
+	color: var(--main-font-color);
 
 }
 .item-header{
@@ -239,7 +226,7 @@ a{
 	max-width: 800px;
 	font-weight: 100;
 	font-size: 20px;
-	color: #525f7f;
+	color: var(--secondary-font-color);
 	line-height: 30px;
 	margin:0 auto;
 }
@@ -266,7 +253,7 @@ a{
 	font-size: 13px;
 	line-height: 20px;
 	font-weight: 100;
-	color: #525f7f;
+	color: var(--secondary-font-color);
 }
 
 .Priority {
@@ -308,7 +295,7 @@ a{
 .Item__smoll-header {
 	font-size: 27px;
 	font-weight: 100;
-	color: #32325d;
+	color: var(--main-font-color);
 
 }
 
@@ -336,7 +323,7 @@ a{
 }
 .time__title {
 	font-size: 25px;
-	color: #32325d;
+	color: var(--main-font-color);
 	margin-top:45px;
 	font-weight:300;
 }
@@ -354,7 +341,7 @@ a{
 }
 .item-text {
 	font-size: 17px;
-	color: #32325d;
+	color: var(--main-font-color);
 	font-weight: 100;
 }
 .finance__img{
@@ -392,6 +379,7 @@ a{
 	border:1px solid #f4f4fe;
 	padding: 5px 20px 0 20px;
 	border-radius: 3px;
+	outline: none;
 }
 .container-input__input::placeholder{
 	color: #8081ab;
@@ -411,101 +399,6 @@ a{
 	padding: 20px 0;
 }
 
-@media (max-width: 996px){
-	.header{
-		top: 20px;
-	}
-	.header__container{
-		flex-direction: column;
-
-	}
-	._ibg{
-		opacity: 0.7;
-	}
-	.Started__body{
-		flex-direction: column;
-	}
-}
-
-@media (max-width: 740px){
-	.header__logo{
-		margin-bottom: 10px;
-	}
-	.menu{
-		flex-direction: column;
-		text-align: center;
-		width: 100%;
-	}
-	.menu__item:not(:last-child){
-		margin: 0 0 10px 0;
-	}
-	.menu__item{
-		border-bottom: 1px solid #845cff;
-		width: 100%;
-		text-align: center;
-		box-sizing: border-box;
-	}
-	.main-block__body{
-		padding: 285px 0 194px 0;
-		text-align: center;
-	}
-	.main-block__title{
-		max-width:100%;
-	}
-	.main-block__text{
-		max-width:100%;
-	}
-	.Block-buttons{
-		max-width: 100%;
-		justify-content: space-around;
-	}
-	._ibg{
-		opacity: 0.4;
-	}
-	.finances-blocks_bottom{
-		flex-direction: column;
-	}
-	/*.finance__img{
-		display: none;
-	}*/	
-}
-
-
-@media (max-width: 600px){
-	.container-input{
-		width: 90%;
-		margin: 30px auto;
-
-	}
-	.container-input__input{
-		width:100%;
-		box-sizing: border-box;
-	}
-	.background__image_left{
-		left: auto;
-	}
-}
-
-
-@media (max-width: 490px){
-	
-	.Block-buttons{
-		text-align: center;
-	}
-	.Block-link{
-		width:100%;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	.Opshens{
-		flex-wrap: wrap;
-		text-align: center;
-	}
-	.Opshens__item{
-		max-width: 70%;
-		margin:10px auto;
-	}
-	.finance__body{
-		padding-left: 10px;
-	}
+.logo-link img:hover{
+	opacity: .5;
 }
